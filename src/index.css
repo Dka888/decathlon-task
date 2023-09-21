@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.img {
+    content: url('/Line 2.svg');
+}
 .button:hover .img{
     content: url('/Line 1.svg');
 }
@@ -19,4 +23,40 @@
 
 .logo {
     content: url('/Rivo.png');
+}
+
+.menu-mobile {
+    content: url('/menu-mobile.svg');
+}
+
+.basket {
+    content: url('/Group 1.png');
+}
+
+.menu-open {
+    content: url('/menu_open.svg');
+}
+
+.model {
+    content: url('/Mask group.png');
+}
+
+.points {
+    content: url('/Group 38.svg');
+}
+
+.product1{
+    content: url('/1.png');
+}
+
+.star {
+    content: url('/fi-ss-star.png');
+}
+
+.product2{
+    content: url('/2.png');
+}
+
+.product3{
+    content: url('/3.png');
 }

@@ -38,7 +38,7 @@ const handleOpenMenu = useCallback(() => {
     <div className="bg-bg-header min-h-screen w-full max-h-[1117px]">
       <header className="flex gap-2 justify-around pt-3 pb-16 md:pb-32 items-center 2xl:pr-32 relative z-1">
         <div>
-          <img src="../public/Rivo.png" alt="logo" className='w-16 md:w-full'/>
+          <img src="./public/Rivo.png" alt="logo" className='w-16 md:w-full logo'/>
         </div>
         <nav>
           <ul className="hidden md:flex justify-between uppercase w-5/12 gap-12 font-header-font text-main text-[22px] ">
@@ -52,10 +52,10 @@ const handleOpenMenu = useCallback(() => {
           className='mx-2 cursor-pointer md:hidden'
           onClick={handleOpenMenu}
         >          
-          <img src='../public/menu-mobile.svg' alt='menu' className='w-9'/>
+          <img src='./public/menu-mobile.svg' alt='menu' className='w-9 menu-mobile'/>
         </div>
         <div className="flex justify-between item-center">
-          <img src="../public/Group 1.png" alt="basket" className="my-3 cursor-pointer w-[32px] h-[32px]"/>
+          <img src="./public/Group 1.png" alt="basket" className="my-3 cursor-pointer w-[32px] h-[32px] basket"/>
           <button 
             className="border-2 rounded-sm border-text-header px-2 my-3 ml-2 md:px-7 md:my-2 md:ml-9 hover:bg-main hover:text-bg-header uppercase md:text-[20px] duration-300">Login</button>
         </div>
@@ -71,7 +71,7 @@ const handleOpenMenu = useCallback(() => {
             <div className='cursor-pointerflex items-center mt-[-7px]'
               onClick={handleOpenMenu}
             >
-              <img src='../public/menu_open.svg' alt='menu' className='h-7 w-7'/>
+              <img src='./public/menu_open.svg' alt='menu' className='h-7 w-7 menu_open'/>
             </div>
           </ul>
       </div>
@@ -95,12 +95,12 @@ const handleOpenMenu = useCallback(() => {
         </div>
         <div className="lg:col-start-8 lg:col-end-12 lg:row-start-1 lg:row-end-6 pb-1">
           <div className='relative w-[320px] lg:w-[570px] lg:h-[717px] mx-auto my-4 lg:m-0'>
-            <img src="../public/Mask group.png" alt="mask_group" className="h-full"/>
+            <img src="./public/Mask group.png" alt="mask_group" className="h-full model"/>
             <div className='absolute top-16 right-3 lg:top-32 lg:-right-[27rem] w-16 lg:w-full'>
-              <img src="../public/Group 38.svg" alt="points" className="" />
+              <img src="./public/Group 38.svg" alt="points" className="points" />
             </div>
             <div className='absolute bottom-16 lg:bottom-28 left-4 w-16 lg:w-full'>
-              <img src="../public/Group 38.svg" alt="points" className=""/>
+              <img src="./public/Group 38.svg" alt="points" className="points"/>
             </div>
             
           </div> 
@@ -114,24 +114,30 @@ const handleOpenMenu = useCallback(() => {
       </div>
       <div className="flex flex-wrap justify-center gap-10 mx-auto mt-20 text-[22px]">
         <div>
-          <div className="bg-[#93B9A2] hover:scale-105 w-4/5 mx-auto duration-300"><img src="../public/1.png"/></div>
+          <div className="bg-[#93B9A2] hover:scale-105 w-4/5 mx-auto duration-300">
+            <img src="./public/1.png" alt='1product' className='product1'/></div>
           <div className="font-header-font text-center m-7">
             <p className="font-semibold">Regular Fit Long Sleeve Top</p>
-            <p className="text-price my-1 flex justify-center">$38.99 <span className="mx-5">|</span> 5.0 <img src='../public/fi-ss-star.png' className="m-0.5 ml-1  w-fit h-fit"/></p>
+            <p className="text-price my-1 flex justify-center">$38.99 <span className="mx-5">|</span> 5.0 
+              <img src='./public/fi-ss-star.png' className="m-0.5 ml-1  w-fit h-fit star"/></p>
           </div>
         </div>
         <div>
-          <div className="bg-[#A9D4BA] hover:scale-105 w-4/5 mx-auto duration-300"><img src="../public/2.png"/></div>
+          <div className="bg-[#A9D4BA] hover:scale-105 w-4/5 mx-auto duration-300">
+            <img src="./public/2.png" className='product2'/></div>
           <div className="font-header-font text-center m-7">
             <p className="font-semibold">Black Crop Tailored Jacket</p>
-            <p className="text-price my-1 flex justify-center">$62.99 <span className="mx-5">|</span> 4.9 <img src='../public/fi-ss-star.png' className="m-0.5 ml-1  w-fit h-fit"/></p>
+            <p className="text-price my-1 flex justify-center">$62.99 <span className="mx-5">|</span> 4.9 
+              <img src='./public/fi-ss-star.png' className="m-0.5 ml-1 star w-fit h-fit"/></p>
           </div>
         </div>
         <div>
-          <div className="bg-[#CADCD0] hover:scale-105 w-4/5 mx-auto duration-300"><img src="../public/3.png"/></div>
+          <div className="bg-[#CADCD0] hover:scale-105 w-4/5 mx-auto duration-300">
+            <img src="./public/3.png" className='product3'/></div>
           <div className="font-header-font text-center m-7">
             <p className="font-semibold">Textured Sunset Shirt</p>
-            <p className="text-price my-1 flex justify-center">$49.99 <span className="mx-5">|</span> 5.0 <img src='../public/fi-ss-star.png' className="m-0.5 ml-1  w-fit h-fit"/></p>
+            <p className="text-price my-1 flex justify-center">$49.99 <span className="mx-5">|</span> 5.0 
+              <img src='../public/fi-ss-star.png' className="m-0.5 ml-1 star w-fit h-fit"/></p>
           </div>
           </div>
       </div>
@@ -149,7 +155,7 @@ const handleOpenMenu = useCallback(() => {
                       <p className="font-semibold">{product.title}</p>
                       <p className="text-price my-1 flex justify-center">{product.price} 
                         <span className="mx-5">|</span> {product.rating.rate} 
-                        <img src='../public/fi-ss-star.png' alt='star' className="m-0.5 ml-1  w-fit h-fit"/>
+                        <img src='./public/fi-ss-star.png' alt='star' className="m-0.5 ml-1 star w-fit h-fit"/>
                       </p>
                     </div>
                   </div>

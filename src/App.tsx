@@ -30,7 +30,7 @@ useEffect(() => {
 
 const handleOpenMenu = useCallback(() => {
   setOpenMenu(!openMenu);
-  setTimeout(() => setOpenMenu(false), 10000);
+  setTimeout(() => setOpenMenu(false), 15000);
 }, [openMenu])
 
   return (
@@ -63,15 +63,15 @@ const handleOpenMenu = useCallback(() => {
 
      
       <div className={`absolute top-0 ${openMenu ? 'right-0' : 'right-[200%]'} duration-1000 w-full h-1/6 px-2 py-6 z-999 bg-bg-header`}>
-          <ul className="uppercase w-full gap-3 text-main flex justify-around items-baseline mx-2">
+          <ul className="uppercase w-full gap-3 text-main flex justify-around items-center mx-2">
             <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Home</li></a>
             <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Shop</li></a>
             <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Features</li></a>
             <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Contact</li></a>
-            <div className='cursor-pointerflex items-center'
+            <div className='cursor-pointerflex items-center mt-[-7px]'
               onClick={handleOpenMenu}
             >
-              <img src='/public/menu_open.svg' alt='menu' className='h-7 w-7 '/>
+              <img src='/menu_open.svg' alt='menu' className='h-7 w-7'/>
             </div>
           </ul>
       </div>
@@ -141,8 +141,8 @@ const handleOpenMenu = useCallback(() => {
       <h3 className='text-main text-[68px] text-center font-header-font mt-16'>Other products</h3>
           <div className='flex flex-wrap gap-20 justify-center mx-auto  mt-20 text-[22px]'>
           {products.map(product => 
-                <div className='w-[350px] h-[650px]' key={product.id}>
-                    <div className="hover:scale-105 h-[500px] flex items-end w-4/5 mx-auto duration-300">
+                <div className='w-[350px] max-h-[650px] md:h-[650px]' key={product.id}>
+                    <div className="hover:scale-105 max-h-[500px] md:h-[500px] flex items-end w-4/5 mx-auto duration-300">
                       <img src={product.image} alt={product.title} className='max-h-full w-full'/>
                     </div>
                     <div className="font-header-font text-center m-7">

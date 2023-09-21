@@ -16,3 +16,7 @@
     left: 0;
     bottom: 0;
 }
+
+.logo {
+    content: url('/Rivo.png');
+}

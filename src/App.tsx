@@ -38,7 +38,7 @@ const handleOpenMenu = useCallback(() => {
     <div className="bg-bg-header min-h-screen w-full max-h-[1117px]">
       <header className="flex gap-2 justify-around pt-3 pb-16 md:pb-32 items-center 2xl:pr-32 relative z-1">
         <div>
-          <img src="/public/Rivo.png" alt="logo" className='w-16 md:w-full'/>
+          <img src="/public/Rivo.png" alt="logo" className='w-16 md:w-full logo'/>
         </div>
         <nav>
           <ul className="hidden md:flex justify-between uppercase w-5/12 gap-12 font-header-font text-main text-[22px] ">

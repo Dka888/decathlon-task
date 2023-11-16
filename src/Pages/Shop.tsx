@@ -25,7 +25,7 @@ export function Shop({ products, message }: ShopProps) {
             <div className="bg-bg-header">
                 <MenuHeader />
             </div>
-            <div className="flex flex-wrap justify-center content-between bg-bg-header">
+            <div className="flex flex-wrap justify-center content-between mt-[-100px] bg-[white]">
                 {products.map(product =>
                     <ProductItem product={product} key={product.id} />)}
             </div>

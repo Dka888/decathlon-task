@@ -1,14 +1,5 @@
 
-import { Product } from "../type"
-import { ProductItem } from "./ProductItem";
-
-interface MainSectionProps {
-    products: Product[];
-    showProducts: boolean;
-    message: string;
-}
-
-export function MainSection({ products, showProducts, message }: MainSectionProps) {
+export function MainSection() {
     return (
         <section className="pt-32 px-5 md:px-1">
             <div className="text-center">
@@ -44,19 +35,6 @@ export function MainSection({ products, showProducts, message }: MainSectionProp
                     </div>
                 </div>
             </div>
-
-            {showProducts &&
-                <>
-                    <h3 className='text-main text-[68px] text-center font-header-font mt-16'>Other products</h3>
-                    <div className='flex flex-wrap gap-20 justify-center mx-auto  mt-20 text-[22px]'>
-                        {products.map(product =>
-                            <ProductItem product={product} key={product.id}/>
-                        )}
-                    </div>
-                </>
-            }
-            {message && <div>{message}</div>}
-
         </section>
     )
 }

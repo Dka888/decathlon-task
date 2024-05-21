@@ -20,10 +20,10 @@ export function PageHeader(){
           <div className='relative w-[320px] lg:w-[570px] lg:h-[717px] mx-auto my-4 lg:m-0'>
             <img src="./public/Mask group.png" alt="mask_group" className="h-full model"/>
             <div className='absolute top-16 right-3 lg:top-32 lg:-right-[27rem] w-16 lg:w-full'>
-              <img src="./public/Group 38.svg" alt="points" className="points" />
+              <img src="./public/Group 38.svg" alt="points" className="points animation" />
             </div>
             <div className='absolute bottom-16 lg:bottom-28 left-4 w-16 lg:w-full'>
-              <img src="./public/Group 38.svg" alt="points" className="points"/>
+              <img src="./public/Group 38.svg" alt="points" className="points animation"/>
             </div>
             
           </div> 

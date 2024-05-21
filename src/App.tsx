@@ -28,7 +28,7 @@ useEffect(() => {
   return (
     <>
       <Routes>
-        <Route path='/decathlon-task' element={<Home products={products} message={message}/>} />
+        <Route path='/decathlon-task' element={<Home />} />
         <Route path='/decathlon-task/shop' element={<Shop products={products} message={message}/>} />
       </Routes>
     </>

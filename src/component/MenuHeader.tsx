@@ -19,8 +19,8 @@ export function MenuHeader() {
                     <ul className="hidden md:flex justify-between uppercase w-5/12 gap-12 font-header-font text-main text-[22px] ">
                         <Link to='/decathlon-task' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Home</li></Link>
                         <Link to='/decathlon-task/shop' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Shop</li></Link>
-                        <a href='#' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Features</li></a>
-                        <a href='#' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Contact</li></a>
+                        <Link to='#' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Features</li></Link>
+                        <Link to='#' className='relative option'><li className="cursor-pointer hover:font-semibold option-li py-2">Contact</li></Link>
                     </ul>
                 </nav>
                 <div
@@ -39,10 +39,10 @@ export function MenuHeader() {
 
             <div className={`absolute top-0 ${openMenu ? 'right-0' : 'right-[200%]'} duration-1000 w-full h-1/6 px-2 py-6 z-999 bg-bg-header`}>
                 <ul className="uppercase w-full gap-3 text-main flex justify-around items-center mx-2">
-                    <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Home</li></a>
-                    <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Shop</li></a>
-                    <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Features</li></a>
-                    <a href='#' className='relative option'><li className="cursor-pointer option-li pb-2">Contact</li></a>
+                    <Link to='/decathlon-task' className='relative option'><li className="cursor-pointer option-li pb-2">Home</li></Link>
+                    <Link to='/decathlon-task/shop' className='relative option'><li className="cursor-pointer option-li pb-2">Shop</li></Link>
+                    <Link to='#' className='relative option'><li className="cursor-pointer option-li pb-2">Features</li></Link>
+                    <Link to='#' className='relative option'><li className="cursor-pointer option-li pb-2">Contact</li></Link>
                     <div className='cursor-pointerflex items-center mt-[-7px]'
                         onClick={handleOpenMenu}
                     >

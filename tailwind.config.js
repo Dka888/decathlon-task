@@ -10,6 +10,7 @@ export default {
         'main':'#224F34',
         'regular': '#267D49',
         'price': '#454545',
+        'white': '#fff'
 
       },
       screens: {
@@ -29,7 +30,7 @@ export default {
       },
       fontSize: {
         'title': '86px',
-        'mobileTitle':'50px'
+        'mobileTitle':'50px',
       },
       lineHeight: {
         'title-line-h': '106.21px',

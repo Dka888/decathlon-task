@@ -8,6 +8,11 @@ export interface Product {
       rate: number,
       count: number
     },
-    price: number
+    price: number,
+    category: string,
   }
   
+
+  export interface CartItem extends Product{
+    quantity: number;
+  }
